@@ -9,13 +9,16 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 public abstract class BasePage {
- public WebDriver driver;
-  public void Basepage(WebDriver driver){
-	  this.driver=driver;
-	  PageFactory.initElements(driver, this);
-  }
 	
-  public void VerifyTitle(String etitle){
+	public WebDriver driver;
+	public BasePage(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+
+ 
+
+public void VerifyTitle(String etitle){
 	  WebDriverWait wait=new WebDriverWait(driver,10);
 	  try{
 	  wait.until(ExpectedConditions.titleIs(etitle));
