@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 13 21:29:42 IST 2017</td>
+<td>Started on:</td><td>Thu Aug 10 16:26:06 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18384 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (101 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,121 +67,97 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.TestLoginPage.testlogin()'><b>testlogin</b><br>Test class: script.TestLoginPage</td>
-<td><div><pre>org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:48:19 -0700&apos;
-System info: host: &apos;Sony-PC&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\Sony\AppData\Local\Temp\rust_mozprofile.NkoJPLHyMf2G, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=2076, browserName=firefox, platformName=windows_nt}]
-Session ID: 202e6486-8044-4875-ba66-0a196c266bec
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at pom.LoginPage.setusername(LoginPage.java:27)
-	at script.TestLoginPage.testlogin(TestLoginPage.java:12)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace13498557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13498557'><pre>org.openqa.selenium.InvalidArgumentException: Expected [object Undefined] undefined to be a string
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:48:19 -0700&apos;
-System info: host: &apos;Sony-PC&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\Sony\AppData\Local\Temp\rust_mozprofile.NkoJPLHyMf2G, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=2076, browserName=firefox, platformName=windows_nt}]
-Session ID: 202e6486-8044-4875-ba66-0a196c266bec
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at pom.LoginPage.setusername(LoginPage.java:27)
-	at script.TestLoginPage.testlogin(TestLoginPage.java:12)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div></td>
-<td>3</td>
-<td>script.TestLoginPage@178f375</td></tr>
+<td title='testNGExample.TestAnnotations.testA()'><b>testA</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-20025028" onClick='toggleBox("Output-20025028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20025028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20025028">
+testA<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
+<tr>
+<td title='testNGExample.TestAnnotations.testA()'><b>testA</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-19381539" onClick='toggleBox("Output-19381539", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19381539" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19381539">
+testA<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
+<tr>
+<td title='testNGExample.TestAnnotations.testB()'><b>testB</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-11035478" onClick='toggleBox("Output-11035478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11035478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11035478">
+testb<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
+<tr>
+<td title='testNGExample.TestAnnotations.testc()'><b>testc</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-7815330" onClick='toggleBox("Output-7815330", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7815330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7815330">
+testc enabled<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
+<tr>
+<td title='testNGExample.TestAnnotations.teste()'><b>teste</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-12624741" onClick='toggleBox("Output-12624741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12624741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12624741">
+teste<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
+<tr>
+<td title='testNGExample.TestAnnotations.testf()'><b>testf</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-12743635" onClick='toggleBox("Output-12743635", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12743635" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12743635">
+testf<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
+<tr>
+<td title='testNGExample.TestAnnotations.testg()'><b>testg</b><br>Test class: testNGExample.TestAnnotations<br/>
+<a href="#Output-29815118" onClick='toggleBox("Output-29815118", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29815118" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29815118">
+testg<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGExample.TestAnnotations@15b5592</td></tr>
 </table><p>
 </body>
 </html>
