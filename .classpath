@@ -17,5 +17,14 @@
 	<classpathentry kind="lib" path="Jars/poi-ooxml-schemas-3.15.jar"/>
 	<classpathentry kind="lib" path="Jars/poi-scratchpad-3.15.jar"/>
 	<classpathentry kind="lib" path="Jars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="Jars/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="Jars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="Jars/extentreports-3.0.0.jar"/>
+	<classpathentry kind="lib" path="Jars/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="Jars/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="Jars/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="Jars/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="Jars/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="Jars/mongodb-driver-core-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
