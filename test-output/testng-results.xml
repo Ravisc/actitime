@@ -1,298 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="8" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[beforesuite]]>
-    </line>
-    <line>
-      <![CDATA[beforetest]]>
-    </line>
-    <line>
-      <![CDATA[beforeclass]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[testA]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[testA]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[testb]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[teste]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[testf]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[testg]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[beforemethod]]>
-    </line>
-    <line>
-      <![CDATA[testc enabled]]>
-    </line>
-    <line>
-      <![CDATA[Aftermethod]]>
-    </line>
-    <line>
-      <![CDATA[Afterclass]]>
-    </line>
-    <line>
-      <![CDATA[aftertest]]>
-    </line>
-    <line>
-      <![CDATA[aftersuite]]>
+      <![CDATA[screenshot taken]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101" started-at="2017-08-10T10:56:06Z" finished-at="2017-08-10T10:56:06Z">
+  <suite name="Suite" duration-ms="14978" started-at="2018-02-03T12:22:05Z" finished-at="2018-02-03T12:22:20Z">
     <groups>
-      <group name="regression">
-        <method signature="TestAnnotations.teste()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="teste" class="testNGExample.TestAnnotations"/>
-      </group> <!-- regression -->
-      <group name="Regression">
-        <method signature="TestAnnotations.testA()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testA" class="testNGExample.TestAnnotations"/>
-        <method signature="TestAnnotations.testg()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testg" class="testNGExample.TestAnnotations"/>
-      </group> <!-- Regression -->
-      <group name="smoke">
-        <method signature="TestAnnotations.testA()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testA" class="testNGExample.TestAnnotations"/>
-        <method signature="TestAnnotations.teste()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="teste" class="testNGExample.TestAnnotations"/>
-        <method signature="TestAnnotations.testf()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testf" class="testNGExample.TestAnnotations"/>
-      </group> <!-- smoke -->
-      <group name="RegressionTest">
-        <method signature="TestAnnotations.testB()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testB" class="testNGExample.TestAnnotations"/>
-      </group> <!-- RegressionTest -->
     </groups>
-    <test name="Default test" duration-ms="101" started-at="2017-08-10T10:56:06Z" finished-at="2017-08-10T10:56:06Z">
-      <class name="testNGExample.TestAnnotations">
-        <test-method status="PASS" signature="m1()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m1" is-config="true" duration-ms="25" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
+    <test name="Test" duration-ms="14978" started-at="2018-02-03T12:22:05Z" finished-at="2018-02-03T12:22:20Z">
+      <class name="script.TestLoginPage">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:script.TestLoginPage@101b7af]" name="setExtent" is-config="true" duration-ms="535" started-at="2018-02-03T17:52:05Z" finished-at="2018-02-03T17:52:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="precondition()[pri:0, instance:script.TestLoginPage@101b7af]" name="precondition" is-config="true" duration-ms="10798" started-at="2018-02-03T17:52:06Z" finished-at="2018-02-03T17:52:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="FAIL" signature="testlogin()[pri:0, instance:script.TestLoginPage@101b7af]" name="testlogin" duration-ms="2395" started-at="2018-02-03T17:52:16Z" finished-at="2018-02-03T17:52:19Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [tested] but found [actiTIME - Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [tested] but found [actiTIME - Login]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at script.TestLoginPage.testlogin(TestLoginPage.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:script.TestLoginPage@101b7af]" name="getResult" is-config="true" duration-ms="674" started-at="2018-02-03T17:52:19Z" finished-at="2018-02-03T17:52:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testlogin status=FAILURE method=TestLoginPage.testlogin()[pri:0, instance:script.TestLoginPage@101b7af] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[beforesuite]]>
+              <![CDATA[screenshot taken]]>
             </line>
           </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method status="PASS" signature="m3()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m3" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testDown()[pri:0, instance:script.TestLoginPage@101b7af]" name="testDown" is-config="true" duration-ms="539" started-at="2018-02-03T17:52:19Z" finished-at="2018-02-03T17:52:20Z">
           <reporter-output>
-            <line>
-              <![CDATA[beforetest]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- m3 -->
-        <test-method status="PASS" signature="m5()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m5" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforeclass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m5 -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testA" duration-ms="10" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testA" duration-ms="2" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="2" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="testB()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testB" duration-ms="5" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testb]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="2" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="teste()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="teste" duration-ms="10" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[teste]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- teste -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="testf()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testf" duration-ms="2" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testf]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testf -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="2" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="testg()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="testg" duration-ms="3" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testg]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testg -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="testc()[pri:1, instance:testNGExample.TestAnnotations@15b5592]" name="testc" duration-ms="3" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testc enabled]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testc -->
-        <test-method status="PASS" signature="m7()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m7" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[beforemethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m7 -->
-        <test-method status="PASS" signature="m6()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m6" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Afterclass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m6 -->
-        <test-method status="PASS" signature="m8()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m8" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Aftermethod]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m8 -->
-        <test-method status="PASS" signature="m4()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m4" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[aftertest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m4 -->
-        <test-method status="PASS" signature="m2()[pri:0, instance:testNGExample.TestAnnotations@15b5592]" name="m2" is-config="true" duration-ms="0" started-at="2017-08-10T16:26:06Z" finished-at="2017-08-10T16:26:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[aftersuite]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- m2 -->
-      </class> <!-- testNGExample.TestAnnotations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testDown -->
+      </class> <!-- script.TestLoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

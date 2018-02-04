@@ -6,8 +6,10 @@
       <class name="script.TestLoginPage">
         <methods>
           <include name="testlogin"/>
+          <include name="getResult"/>
+          <include name="testDown"/>
+          <include name="setExtent"/>
           <include name="precondition"/>
-          <include name="postcondition"/>
         </methods>
       </class> <!-- script.TestLoginPage -->
     </classes>

@@ -26,5 +26,10 @@
 	<classpathentry kind="lib" path="Jars/httpmime-4.5.2.jar"/>
 	<classpathentry kind="lib" path="Jars/mongodb-driver-3.3.0.jar"/>
 	<classpathentry kind="lib" path="Jars/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="Jars/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Jars/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="Jars/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Jars/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="Jars/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
